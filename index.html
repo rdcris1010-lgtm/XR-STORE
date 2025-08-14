@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>xr store.com</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="XR STORE">
+    </div>
+    <nav>
+        <a href="https://www.youtube.com/channel/UCTYXzB7XWIfbeFVcYd1D1qg" target="_blank">YOUTUBE</a>
+        <a href="https://discord.gg/nYfqf3GqTE" target="_blank">DISCOR</a>
+    </nav>
+</header>
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Buscar producto..." onkeyup="searchProducts()">
+</div>
+
+<main>
+    <section class="products">
+        <div class="product" onclick="openModal('LOGIN_V1', '4.00 US$', 'XR STORE:LOGIN_V1 SOLO IMAJEN EDITABLE I MUSICA CON PROTECION DE IP PARA CONPRAR DALE A BAJO 👇')">
+            <img src="img/prod1.jpg">
+            <h3>LOGIN_V1</h3>
+            <p>4.00 US$</p>
+        </div>
+</section>
+</main>
+
+<!-- Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalPrice"></p>
+        <p id="modalDesc"></p>
+        <a id="discordLink" href="https://discord.gg/TU_GRUPO" target="_blank">
+            <button class="buyBtn">CONPRAR</button>
+        </a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
